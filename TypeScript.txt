@@ -1,0 +1,44 @@
+***Variables***
+----------------
+let a:number = 10 
+console.log(a)
+
+***Condition in Ts***
+---------------------
+// let a:number = 9;
+// let b:number = 10;
+
+let a:number = 9 , b = 10;
+
+
+if(a>b){
+    console.log("a is greater")
+}
+else{
+    console.log("b is greater")
+}
+
+a>b?"true" : "false"
+
+***For loop in TS***
+---------------------
+for(let i=0 ; i<10 ; i++){
+    console.log("The value is : "+i)
+}
+
+let arr = [10,20,30,50]
+arr.forEach((x)=>{
+console.log(x)
+});
+
+***functions in TS***
+---------------------
+function Meet(greeting:String , name:String):String{ <!--Defining a String-->
+    return greeting+''+name
+}
+
+console.log(Meet("hello ","Shubham"))
+
+
+***Interface in TS***
+---------------------

@@ -1,0 +1,10 @@
+h1,p{
+    text-align: center;
+}
+p{
+    font-size: 1.2em;
+}
+span{
+    color: red;
+    font-weight: bolder;
+}
