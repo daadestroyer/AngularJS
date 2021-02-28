@@ -86,3 +86,34 @@ class Employee implements Person, MyEmp{
 }
 
 
+***Decorators in TS***
+----------------------
+>>> Decorators are thoose which decorate your class by adding some extra features into that class
+>>> Decorators can be attached to a class declaration, method, accessor, property, or parameter
+>>> Decorators use the form @expression
+>>> Kind of Dependency Injection which was already in some frameworks like Spring boot etc..
+
+function canFly(constructorFunction : Function){
+    console.log("can fly invoked...")
+    constructorFunction.prototype.fly = true;
+}
+
+@canFly // decorator : injecting canFly function in Person class
+class Person{
+    private name:string;
+
+
+    constructor(name:string){
+        this.name = name;
+        console.log('***constructior invoked***')
+    }
+}
+
+console.log('***creating first object of Person type***');
+let shubham : Person = new Person("shubham")
+console.log(shubham)
+
+
+console.log('***creating second object of Person type***');
+let shubhanshu : Person = new Person("shubhanshu")
+console.log(shubhanshu)
