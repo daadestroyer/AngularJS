@@ -1,0 +1,25 @@
+1. Text interpolation:-
+--------------------
+Interpolation refers to embedding expressions into marked up text. By default, interpolation uses the double curly braces {{ and }} as delimiters.
+
+src/app/app.component.ts
+--------------------------
+currentCustomer = 'Maria';
+
+src/app/app.component.html
+--------------------------
+<h3>Current customer: {{ currentCustomer }}</h3>
+
+src/app/app.component.html
+---------------------------
+<p>{{title}}</p>
+<div><img src="{{itemImageUrl}}"></div>
+
+
+Resolving expressions with interpolation
+------------------------------------------
+<!-- "The sum of 1 + 1 is 2" -->
+<p>The sum of 1 + 1 is {{1 + 1}}.</p>
+
+<!-- "The sum of 1 + 1 is not 4" -->
+<p>The sum of 1 + 1 is not {{1 + 1 + getVal()}}.</p>
