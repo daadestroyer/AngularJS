@@ -40,5 +40,25 @@ function Meet(greeting:String , name:String):String{ <!--Defining a String-->
 console.log(Meet("hello ","Shubham"))
 
 
-***Interface in TS***
+***Class in TS***
 ---------------------
+class Parent{
+   property : number
+    constructor(a:number){
+        this.property = a;
+    }
+    marriage():void{
+        console.log("I found a girl for you")
+    }
+}
+class Child extends Parent{
+    disp():void{
+        console.log("My father property is : "+this.property)
+    }
+}
+
+var child = new Child(50000);
+
+child.disp();
+child.marriage();
+
