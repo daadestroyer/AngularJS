@@ -8,6 +8,6 @@ body {
     box-sizing: border-box;
     background-size: cover;
     width: auto;
-    background-image: url("./assets/image.jpg");
+    background-image: url("/counter-app/src/assets/image.jpg");
     background-position: top;
   }
